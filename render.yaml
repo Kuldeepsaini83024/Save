@@ -1,0 +1,33 @@
+
+services:
+  - type: worker
+    name: techvj-merged-bot
+    env: python
+    repo: https://github.com/your-username/TechVJ-Merged-Bot.git
+    branch: main
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: python3 bot.py
+    envVars:
+      - key: BOT_TOKEN
+        value: your_bot_token
+      - key: API_ID
+        value: your_api_id
+      - key: API_HASH
+        value: your_api_hash
+      - key: MONGO_URL
+        value: your_mongodb_url
+      - key: SHORTLINK_API
+        value: your_shortlink_token
+      - key: ADMINS
+        value: your_admin_id (space separated)
+      - key: PREMIUM_USERS
+        value: your_premium_users_id (space separated)
+      - key: PAID_TIMER
+        value: "60"
+      - key: FREE_TIMER
+        value: "300"
+      - key: TELEGRAM_BOT_SESSION
+        value: your_mautrix_or_telethon_session
+      - key: MAUTRIX_TOKEN
+        value: your_mautrix_token

@@ -5,8 +5,8 @@
 from pyrogram import Client
 
 # Imported from V2 Bot
-from modules import login, ytdl, shrink, plans, stats
-from modules import func, get_func
+from TechVJ.modules import login, ytdl, shrink, plans, stats
+from TechVJ.modules import func, get_func
 
 from config import API_ID, API_HASH, BOT_TOKEN
 
